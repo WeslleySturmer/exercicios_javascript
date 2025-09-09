@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    
+    <script>
+        var n1 = Number(window.prompt('Me fale um número'))
+        var n2 = Number(window.prompt('Me fale um outro número'))
+
+        soma = n1 + n2
+        subtracao = n1 - n2
+        multiplicacao = n1 * n2
+        divisao = n1 / n2
+        resto_divisao = n1 % n2
+        potenciacao = n1 ** n2
+
+        document.body.innerHTML = `<p>A soma entre ${n1} e ${n2} é ${soma}</p>
+        <p>A subtração entre ${n1} e ${n2} é ${subtracao}</p>
+        <p>A multiplicação entre ${n1} e ${n2} é ${multiplicacao}</p>
+        <p>A divisão entre ${n1} e ${n2} é ${divisao}</p>
+        <p>O resto da divisão entre ${n1} e ${n2} é ${resto_divisao}</p>
+        <p>A potencia de ${n1} elevado a ${n2} é ${potenciacao}</p>`
+         
+        if (n1 > n2)
+            document.body.innerHTML += `<p>${n1} é maior que ${n2}</p>`
+        else 
+           if (n1 < n2)
+                document.body.innerHTML += `<p>${n1} é menor que ${n2}</p>`
+            else
+                document.body.innerHTML += `<p>${n1} não é nem maior nem menor que ${n2}</p>`
+
+        if (n1 == n2)
+            document.body.innerHTML += `<p>${n1} é igual a ${n2}</p>`
+        else 
+            document.body.innerHTML += `<p>${n1} é diferente a ${n2}</p>`
+    </script>
+</body>
+</html>
