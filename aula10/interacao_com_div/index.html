@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#area {
+            font: bold 20pt arial;
+            background-color: brown;
+            color: beige;
+            text-align: center;
+            align-content: center;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <p>Interaja...</p>
+    </div>
+
+    <script>
+        let area = document.querySelector('div#area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseleave', saiu)
+
+        function clicar(){
+            area.innerHTML = '<p>Clicou!</p>'
+            area.style.background = 'red'
+        }
+
+        function entrar(){
+            area.innerHTML = '<p>Entrou!</p>' 
+        }
+
+        function saiu(){
+            area.innerHTML = '<p>Saiu!</p>'
+            area.style.background = 'brown'
+        }
+    </script>
+</body>
+</html>
