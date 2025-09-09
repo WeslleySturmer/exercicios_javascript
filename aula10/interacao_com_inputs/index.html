@@ -20,10 +20,8 @@
 
         function somar(){
             let resultado = document.querySelector('div#resultado')
-            let txtn1 = document.querySelector('input#n1')
-            let txtn2 = document.querySelector('input#n2')
-            let n1 = Number(txtn1.value)
-            let n2 = Number(txtn2.value)
+            let n1 = Number(document.querySelector('input#n1').value)
+            let n2 = Number(document.querySelector('input#n2').value)
 
             let soma = n1 + n2
 
