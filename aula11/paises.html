@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativo de países</title>
+</head>
+<body>
+    <h1>Comparativo de países</h1>
+    <p>Digite o nome de onde você nasceu: </p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" id="botao">
+    <div id="resultado"></div>
+
+    <script>
+        document.querySelector('input#botao').addEventListener('click', verificar_pais)
+
+        function verificar_pais(){
+            let pais = (document.querySelector('input#pais').value).toLowerCase()
+            let resultado = document.querySelector('div#resultado')
+
+            if (pais == 'brasil'){
+                resultado.innerHTML = '<p>Você é brasileiro</p>'
+            } else {
+                resultado.innerHTML = '<p>Você é estrangeiro</p>'
+            }
+
+        }
+    </script>
+</body>
+</html>

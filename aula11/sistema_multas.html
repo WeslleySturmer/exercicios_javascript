@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <input type="number" name="vel" id="vel">
+    <input type="button" value="Verificar" id="botao">
+    <div id="resultado">
+    </div>
+
+    <script>
+        let resultado  = document.querySelector('div#resultado')
+        document.body.querySelector('input#botao').addEventListener('click', verificar)
+
+        function verificar(){
+            let velocidade = Number(document.querySelector('input#vel').value)
+            let valor_multa = (velocidade * 2.36).toFixed(2) 
+            if (velocidade > 80){
+                resultado.innerHTML = `Sua velocidade é de ${velocidade} km/h, sendo assim será multado em R$ ${valor_multa}`
+            } else {
+                resultado.innerHTML = `Sua velocidade é de ${velocidade} km/h, sendo assim, não será multado`
+            }
+        }
+
+    </script>
+</body>
+</html>
