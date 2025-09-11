@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(2, 117, 117);
+    font: normal 20px arial;
+}
+
+header{
+    font: bold 40px arial;
+    color: rgb(236, 236, 236);
+}
+
+section{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.308) 8px 8px;
+    margin: 20px;
+}
+
+#foto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body div img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}

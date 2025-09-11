@@ -1,0 +1,41 @@
+body {    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 162, 255);
+    font: normal 20px arial;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    font: bold 25px arial;
+}
+
+section {
+    display: flex;
+    background-color: azure;
+    border-radius: 20px;
+    padding: 30px;
+    width: 40%;
+    height: 50%;
+    box-shadow:rgba(0, 0, 0, 0.164) 5px 7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section div img {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+footer {
+    font: normal 16px arial;
+}
