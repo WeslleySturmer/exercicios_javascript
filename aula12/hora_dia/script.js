@@ -3,7 +3,7 @@ document.body.addEventListener('load', carregar())
 function carregar(){
     setInterval(() => {
         let data_atual = new Date()
-        let hora_atual = 11 // data_atual.getHours()
+        let hora_atual = data_atual.getHours()
         let minuto_atual = data_atual.getMinutes().toString().padStart(2,'0')
         
         let corpo = document.querySelector('body')
