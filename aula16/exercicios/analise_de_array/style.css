@@ -1,0 +1,60 @@
+body {    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 162, 255);
+    font: normal 20px arial;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    font: bold 25px arial;
+}
+
+section {
+    display: flex;
+    background-color: azure;
+    border-radius: 20px;
+    padding: 30px;
+    width: 25%;
+    height: 50%;
+    box-shadow:rgba(0, 0, 0, 0.164) 5px 7px;
+    margin: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section p {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 10px;
+}
+
+section p label{
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+section p input#num{
+    width: 80%;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#btnfinalizar{
+    align-self: center;
+}
+
+div#resultado{
+    margin-top: 20px;
+}
+
+footer {
+    font: normal 16px arial;
+}
