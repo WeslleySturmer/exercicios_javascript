@@ -9,7 +9,7 @@ function contar(){
     let passo = Number(input_passo.value)
     let resultado = document.querySelector('div#resultado')
 
-    if (inicio > fim || passo <= 0 || passo > fim){
+    if (passo <= 0 || passo > fim){
         window.alert('Valores incoerentes, verifique os dados digitados e tente novamente')
         input_inicio.value = ''
         input_fim.value = ''
@@ -20,15 +20,29 @@ function contar(){
         setTimeout(() => {
             resultado.innerHTML = ''
 
-            for(let i = inicio; i <= fim; i += passo){
-                if (i == inicio){
-                    resultado.innerHTML += `${i} `
-                } else if (i < fim) {
-                    resultado.innerHTML += `&#128073 ${i} `
-                } else {
-                    resultado.innerHTML += `&#128073 ${i} &#127937`
+            if (inicio < fim) {
+                for(let i = inicio; i <= fim; i += passo){
+                    if (i == inicio){
+                        resultado.innerHTML += `${i} `
+                    } else if (i < fim) {
+                        resultado.innerHTML += `&#128073 ${i} `
+                    } else {
+                        resultado.innerHTML += `&#128073 ${i} &#127937`
+                    }
+                }
+            } else {
+                for(let i = inicio; i >= fim; i -= passo){
+                    if (i == inicio){
+                        resultado.innerHTML += `${i} `
+                    } else if (i > fim) {
+                        resultado.innerHTML += `&#128073 ${i} `
+                    } else {
+                        resultado.innerHTML += `&#128073 ${i} &#127937`
+                    }
                 }
             }
+
+
         }, 1200)
     }
 }
