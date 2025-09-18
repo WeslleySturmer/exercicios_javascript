@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden{
+    display: none;
+    opacity: 0%;
+    scale: 0%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: normal 20pt 'Poppins', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+#workspace{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 400px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #584D3D;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+#workspace input[name="pais"]{
+    width: 80%;
+    max-width: 200px;
+    height: 25px;
+    margin: 10px;
+    border-radius: 40px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+#workspace #pais::placeholder{
+    text-align: center;
+}
+
+#workspace #buscar{
+    border-radius: 8px;
+    padding: 5px;
+    transition: all 0.4s ease;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.637);
+    border: 1px solid #ddd;
+}
+
+#workspace #buscar:hover{
+    scale: 115%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#resposta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 100%;
+    scale: 100%;
+    width: 50%;
+    max-width: 500px;
+    margin: 30px;
+    background-color: #584D3D;
+    border-radius: 15px;
+    transition: 0.5s ease-in;
+    font: normal 16px arial;
+    color: white;
+}
+
+#resposta img{
+    margin-top: 10px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    border-radius: 8px;
+}
