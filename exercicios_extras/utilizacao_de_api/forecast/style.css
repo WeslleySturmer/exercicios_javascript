@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden{
+    opacity: 0%;
+    scale: 0%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: #04263D;
+    font: normal 20px arial;
+}
+
+.workspace{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    width: 400px;
+}
+
+div.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 380px;
+    height: 50px;
+}
+
+div.search-bar input{
+    background-color: #FFFFFF;
+    border: none;
+}
+
+div.search-bar #searchInput{
+    padding: 10px;
+    border-radius: 30px;
+    width: 80%;
+    font: normal 20px arial;
+    text-transform: uppercase;
+}
+
+div.search-bar #searchBtn{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #4e89b156;
+    transition: all 0.4s ease;
+}
+
+div.search-bar #searchBtn:hover{
+    background-color: #4e89b19c;
+    scale: 110%;
+}
+
+div #resposta{
+    scale: 100%;
+    opacity: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFFFFF;
+    color: #04263D;
+    border-radius: 0px 0px 30px 30px;
+}
+
+div #resposta #emoji_tempo{
+    font-size: 150px;
+    overflow: hidden;
+    margin: 30px;
+}
+
+div #notFound{
+    width: 100%;
+}
