@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+
+    background-color: rgb(40, 40, 138);
+    height: 10vh;
+    width: 100%;
+    padding-left: 30px;
+}
+
+header button{
+    background-color: aliceblue;
+    margin-right: 30px;
+}
+
+main{
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 1fr ; */
+    grid-template-areas: 
+    'aside tabela estatistica'
+    'aside tabela estatistica'
+    'aside caixas caixas';
+    gap: 40px;
+
+    padding-top: 10vh;
+    min-height: 95vh;
+}
+
+aside{
+    grid-area: aside;
+    background-color: aqua;
+    height: 100%;
+
+    width: 100px;
+    overflow: hidden;
+
+    transition: all 0.5s ease;
+}
+
+aside.hidden{
+    width: 0;
+}
+
+.tabela{
+    grid-area: tabela;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 20px 0px 0px 20px;
+}
+
+#tabela_clientes {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #eee;
+}
+
+.estatistica{
+    grid-area: estatistica;
+    background-color: bisque;
+    padding: 10px;
+    margin: 20px 20px 0px 0px;
+}
+
+.caixas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: caixas;
+    gap: 20px 40px;
+    margin: 20px;
+}
+
+.caixas-item{
+    background-color: tomato;
+    padding: 10px;
+}
+
+@media (max-width: 1000px){
+    main{
+        display: grid;
+        grid-template-areas: 
+        'aside tabela'
+        'aside estatistica'
+        'aside caixas';
+    }
+
+    .caixas{
+        grid-template-columns: 1fr;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 5vh;
+    background-color: bisque;
+}
