@@ -1,39 +1,45 @@
 const numberButtons = document.querySelectorAll('.numero')
 const operatorButtons = document.querySelectorAll('.operador')
 const limpar = document.querySelector('#limpar')
+const inverte = document.querySelector('#inverte')
 const igual = document.querySelector('#igual')
 const screen = document.querySelector('.screen')
 
-let total = 0
+let total = null
+let num = 0
 let operator = ''
 
-limpar.addEventListener('click', limparTela)
+limpar.addEventListener('click', resetarValores)
 igual.addEventListener('click', calcularTotal)
+inverte.addEventListener('click', inverteSinal)
 
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
-        mostrarNumeroTela(button)
+        if (screen.textContent.length < 14){
+            if (!(button.value == '.' && screen.textContent.includes('.'))){
+                mostrarNumeroTela(button)
+                num = Number(screen.textContent)
+            }
+        }
     })
-    
 })
 
 operatorButtons.forEach(button => {
     button.addEventListener('click', () => {
-        operator = button.value
-        calcular()
+        if (screen.textContent != ''){
+            operator = button.value
+            num = Number(screen.textContent)
+            calcular()
+        }
     })
 })
 
-//operatorButtons.forEach(button => calcular())
-
 function mostrarNumeroTela(button){
-    screen.innerHTML += button.value
+    screen.textContent += button.value
 }
 
 function calcular(){
-    let num = Number(screen.innerText)
-
-    if (total == 0){
+    if (total == null){
         total = num
     } else {
         switch (operator){
@@ -52,22 +58,27 @@ function calcular(){
             case '*':
                 total *= num
                 break
-
         }
     }
 
-    screen.innerHTML = ''  
+    screen.textContent = ''  
 }
 
-function limparTela(){
-    screen.innerHTML = ''
-    total = 0
+function resetarValores(){
+    screen.textContent = ''
+    total = null
+    num = null
 }
 
 function calcularTotal(){
-    let num = Number(screen.innerText)
+    if (total != null && num != null){
+        calcular()
+        screen.textContent = total
+        num = null
+        total = null
+    }
+}
 
-    calcular()
-
-    screen.innerHTML = total
+function inverteSinal(){
+    screen.textContent = Number(screen.textContent) * -1
 }

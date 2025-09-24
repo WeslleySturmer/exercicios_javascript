@@ -22,11 +22,15 @@ main{
 
     padding: 30px;
     border-radius: 30px;
+    max-width: 330px;
 
     background-color: #14181B;
 }
 
 main div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
     grid-column: 1 / 5;
 
     min-height: 60px;
@@ -37,7 +41,8 @@ main div{
     border-radius: 20px;
     margin-bottom: 5px;
     padding: 5px;
-    text-align: end;
+
+    overflow: scroll;
 }
 
 main input{
