@@ -1,0 +1,15 @@
+[
+  { "id": 1, "username": "ana.vieira",   "email": "ana.vieira@acme.local",   "password": "Senha123!",   "role": "padrão", "status": "ativo" },
+  { "id": 2, "username": "bruno.carvalho","email": "bruno.carvalho@acme.local","password": "Bruno2024$",  "role": "padrão", "status": "ativo" },
+  { "id": 3, "username": "carla.silva",  "email": "carla.silva@acme.local",  "password": "C@rla!01",     "role": "padrão", "status": "inativo" },
+  { "id": 4, "username": "daniel.olive", "email": "daniel.olive@acme.local", "password": "D4n!el#",      "role": "administrador", "status": "ativo" },
+  { "id": 5, "username": "eduarda.m",    "email": "eduarda.m@acme.local",    "password": "Edu@2023",     "role": "padrão", "status": "ativo" },
+  { "id": 6, "username": "felipe.r",     "email": "felipe.r@acme.local",     "password": "FpR#9876",     "role": "padrão", "status": "ativo" },
+  { "id": 7, "username": "gabriela",     "email": "gabriela@acme.local",     "password": "Gabi_pass1",   "role": "padrão", "status": "ativo" },
+  { "id": 8, "username": "henrique",     "email": "henrique@acme.local",     "password": "H3nriq!",      "role": "administrador", "status": "inativo" },
+  { "id": 9, "username": "isabela",      "email": "isabela@acme.local",      "password": "Isa_2022",     "role": "padrão", "status": "ativo" },
+  { "id": 10,"username": "joao.mendes",  "email": "joao.mendes@acme.local",  "password": "Jo@oM#1",      "role": "padrão", "status": "ativo" },
+  { "id": 11,"username": "karina",       "email": "karina@acme.local",       "password": "Kar!na90",     "role": "padrão", "status": "ativo" },
+  { "id": 12,"username": "luiz.admin",   "email": "luiz.admin@acme.local",   "password": "Admin!Luiz",   "role": "administrador", "status": "ativo" },
+  { "id": 13,"username": "w",   "email": "luiz.admin@acme.local",   "password": "w",   "role": "administrador", "status": "inativo" }
+]
