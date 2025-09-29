@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Filtros</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Pessoas cadastradas</h1>
+        <div class="filtros">
+            <label for="filtroNome">Nome: </label>
+            <input type="text" name="filtroNome" id="filtroNome" placeholder="Nome">
+
+            <label for="filtroPapel">Papel: </label>
+            <select name="filtroPapel" id="filtroPapel">
+                <option value="ambos">Ambos</option>
+                <option value="padrão">Padrão</option>
+                <option value="administrador">Administrador</option>
+            </select>
+
+            <label for="filtroAtivo">Status: </label>
+            <select name="filtroAtivo" id="filtroAtivo">
+                <option value="ambos">Ambos</option>
+                <option value="ativo">Ativo</option>
+                <option value="inativo">Inativo</option>
+            </select>
+
+            <input type="button" value="Filtrar" id="filtroBtn">
+        </div>
+        
+        <table id="tabela_usuarios">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Papel</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

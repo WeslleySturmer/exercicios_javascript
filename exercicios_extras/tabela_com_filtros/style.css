@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: linear-gradient(45deg, #99F7AB, #ABDF75);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #60695ca8;
+        
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+
+    width: 100%;
+    max-height: 600px;
+}
+
+#filtroNome{
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #C5D6D8;
+}
+
+#filtroPapel{
+    border: none;
+    background-color: #C5D6D8;
+    border-radius: 10px;
+    padding: 5px;
+    width: 120px;
+}
+
+#filtroAtivo{
+    border: none;
+    background-color: #C5D6D8;
+    border-radius: 10px;
+    padding: 5px;
+    width: 120px;
+}
+
+#filtroBtn{
+    background-color: #C5D6D8;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+
+    align-self: end;
+}
+
+#tabela_usuarios{
+    height: 100px;
+    width: 500px;
+    overflow: hidden;
+}
+
+main table thead th{
+    background-color: #60695C;
+    color: #FFF;
+}
+
+main table thead tr{
+    background-color: #99f7aa71;
+}
+
+main table thead tr:nth-child(even){
+    background-color: #acdf757c;
+}

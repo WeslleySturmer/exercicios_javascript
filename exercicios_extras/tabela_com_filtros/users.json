@@ -1,0 +1,16 @@
+[
+  { "id": 1, "username": "ana.vieira",   "email": "ana.vieira@acme.local",   "name": "Ana Vieira",   "role": "padrão", "status": "ativo" },
+  { "id": 2, "username": "bruno.carvalho","email": "bruno.carvalho@acme.local","name": "Bruno Carvalho",  "role": "padrão", "status": "ativo" },
+  { "id": 3, "username": "carla.silva",  "email": "carla.silva@acme.local",  "name": "Carla Silva",     "role": "padrão", "status": "inativo" },
+  { "id": 4, "username": "daniel.olive", "email": "daniel.olive@acme.local", "name": "Daniel Oliveira",      "role": "administrador", "status": "ativo" },
+  { "id": 5, "username": "eduarda.m",    "email": "eduarda.m@acme.local",    "name": "Eduarda Maciel",     "role": "padrão", "status": "ativo" },
+  { "id": 6, "username": "felipe.r",     "email": "felipe.r@acme.local",     "name": "Felipe Ramos",     "role": "padrão", "status": "ativo" },
+  { "id": 7, "username": "gabriela",     "email": "gabriela@acme.local",     "name": "Gabriela Souza",   "role": "padrão", "status": "ativo" },
+  { "id": 8, "username": "henrique",     "email": "henrique@acme.local",     "name": "Henrique e Juliano",      "role": "administrador", "status": "inativo" },
+  { "id": 9, "username": "isabela",      "email": "isabela@acme.local",      "name": "Isabela Nunes",     "role": "padrão", "status": "ativo" },
+  { "id": 10,"username": "joao.mendes",  "email": "joao.mendes@acme.local",  "name": "João Mendes",      "role": "padrão", "status": "ativo" },
+  { "id": 11,"username": "karina",       "email": "karina@acme.local",       "name": "Karina Lemos",     "role": "padrão", "status": "ativo" },
+  { "id": 12,"username": "luiz.admin",   "email": "luiz.admin@acme.local",   "name": "Luiz Henrique",   "role": "administrador", "status": "ativo" },
+  { "id": 13,"username": "testedeloginmuitogrande",   "email": "testedeloginmuitogrande@acme.local",   "name": "testedeloginmuitogrande",   "role": "administrador", "status": "ativo" },
+  { "id": 14,"username": "w",            "email": "w@acme.local",            "name": "w",            "role": "administrador", "status": "inativo" }
+]
